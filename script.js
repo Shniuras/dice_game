@@ -1,6 +1,5 @@
 document.getElementById("rollDice").disabled = true;
 
-
 document.getElementById("startGame").onclick = function(){
     document.getElementById("firstDice").innerHTML = "0";
     document.getElementById("secondDice").innerHTML = "0";
@@ -9,8 +8,10 @@ document.getElementById("startGame").onclick = function(){
     document.getElementById("rollDice").disabled = false;
     document.getElementById('win').innerHTML = "";
     document.getElementById('gameOver').innerHTML = "";
+
     attempt=0;
     win = 0;
+
         document.getElementById("rollDice").onclick = function() {
             if (attempt < 4) {
                 attempt++;
@@ -43,7 +44,7 @@ document.getElementById("startGame").onclick = function(){
                     document.getElementById('win').innerHTML = "";
                 }
 
-            } else  {
+            } else {
                     document.getElementById("rollDice").disabled = true;
                     document.getElementById('gameOver').innerHTML = "Game Over";
 

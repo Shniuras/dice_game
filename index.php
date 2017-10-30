@@ -55,6 +55,11 @@ if(!isset($_SESSION['username'])){
             <button id="rollDice" class="btn btn-secondary sm">Role the Dice!</button>
         </div>
     </div>
+    <div class="row mt-2">
+        <div class="col">
+        <button id="stats" class="btn btn-secondary sm" onclick="location.href='stats.php'">My Stats</button>
+        </div>
+    </div>
 </div>
 
 

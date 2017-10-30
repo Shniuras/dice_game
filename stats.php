@@ -15,7 +15,10 @@ session_start();
   <body>
     <div class="container">
     	<div class="row">
-    		<h1>Your Stats</h1>
+    		<h1><?php echo $_SESSION["username"]?> Stats</h1>
+            <div class="col mt-2">
+                <button class="btn btn-secondary sm" onclick="location.href='index.php'">Back</button>
+            </div>
     	</div>
     	<div class="row">
     		<div class="col-8">
